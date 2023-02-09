@@ -8,7 +8,7 @@ export class Pokemon{
   get PokemonListTemplate(){
     return `
     <div>
-      <button class="btn btn-primary" onclick="app.pokemonsController.setActivePokemon('${this.url}')">${this.name}</button>
+      <button class="btn btn-primary w-75 m-2" onclick="app.pokemonsController.setActivePokemon('${this.url}')">${this.name}</button>
     </div>
     `
   }

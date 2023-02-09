@@ -6,6 +6,7 @@ import { pokeAPI, sandboxAPI } from "./AxiosService.js"
 
 class PokemonsService{
   async getAllPokemons() {
+    console.log('this is the get function in my service')
     const res = await pokeAPI.get('/api/v2/pokemon/')
     console.log('[POKEMON LIST]', res.data);
     appState.pokemons = res.data.results.map(p => new Pokemon(p))
@@ -16,12 +17,6 @@ class PokemonsService{
   console.log('[SETTING ACTIVE POKEMON]', res.data);
   appState.activePokemon = new ActivePokemon(res.data)
   }
-
-  async catchPokemon(name) {
-    // const res = await sandboxAPI.post()
-    console.log('[CATCHING POKEMON]', name);
-  }
-
 }
 
 

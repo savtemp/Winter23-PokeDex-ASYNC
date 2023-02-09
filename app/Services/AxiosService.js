@@ -1,6 +1,6 @@
 // @ts-ignore
 export const sandboxAPI = axios.create({
-  baseURL: 'https://bcw-sandbox.herokuapp.com/api/savannah/pokemon',
+  baseURL: 'https://bcw-sandbox.herokuapp.com/api/',
   timeout: 2500
 })
 // @ts-ignore

@@ -8,11 +8,11 @@ export class ActivePokemon{
 
   get ActivePokemonTemplate(){
     return `
-    <div>
+    <div class="text-center">
       <img class="img-fluid" src="${this.img}" alt="">
-      <p>${this.name}</p>
-      <p>${this.FormatAbilities}</p>
-      <button class="btn btn-success" onclick="app.pokemonsController.catchPokemon('${this.name}')">Catch Pokemon</button>
+      <p><b>${this.name}</b></p>
+      <p>Abilities: ${this.FormatAbilities}</p>
+      <button class="btn btn-success" onclick="app.myPokemonsController.catchPokemon('${this.name}')">Catch Pokemon</button>
     </div>
     `
   }

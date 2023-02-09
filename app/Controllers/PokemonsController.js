@@ -39,14 +39,4 @@ export class PokemonsController{
       Pop.error(error.message)
     }
   }
-
-  async catchPokemon(name){
-    // console.log('adding this pokemon to my collection');
-    try {
-      await pokemonsService.catchPokemon(name)
-    } catch (error) {
-      Pop.error(error.message)
-    }
-  }
-
 }

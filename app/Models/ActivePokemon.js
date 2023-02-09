@@ -24,4 +24,13 @@ export class ActivePokemon{
     `)
     return template
   }
+
+  // NOTE if you want to use a static because it has a limited amount of properties and you wouldn't to just create a whole class and model for one thing 
+  // static PokemonListTemplate(data){
+  //   return `
+  //   <div>
+  //     <button class="btn btn-primary w-75 m-2" onclick="app.pokemonsController.setActivePokemon('${data.url}')">${data.name}</button>
+  //   </div>
+  //   `
+  // }
 }

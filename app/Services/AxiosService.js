@@ -6,5 +6,9 @@ export const sandboxAPI = axios.create({
 // @ts-ignore
 export const pokeAPI = axios.create({
   baseURL: 'https://pokeapi.co',
-  timeout: 2500
+  timeout: 2500,
+  // NOTE sets parameters around what you receive back from the network tab, dependent on what your API supports 
+  params: {
+    limit: 10000,
+  }
 })

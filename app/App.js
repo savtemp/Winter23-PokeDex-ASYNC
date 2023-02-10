@@ -5,6 +5,7 @@ import { ValuesController } from "./Controllers/ValuesController.js";
 class App {
   // valuesController = new ValuesController();
 
+  // NOTE make sure to add all the controllers that you want to interact with the DOM 
   pokemonsController = new PokemonsController()
 
   myPokemonsController = new MyPokemonsController()

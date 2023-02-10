@@ -31,6 +31,7 @@ export class PokemonsController{
     }
   }
 
+  // NOTE I chose to use the URL on my object to access more data about that object, you can also use the name, or any other 'unique' identifier 
   async setActivePokemon(url){
     // console.log('click the button to select a pokemon');
     try {

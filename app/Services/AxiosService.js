@@ -1,4 +1,6 @@
 // @ts-ignore
+
+// NOTE -------vvv banana word, name your API something that makes sense to you! 
 export const sandboxAPI = axios.create({
   baseURL: 'https://bcw-sandbox.herokuapp.com/api/',
   timeout: 2500

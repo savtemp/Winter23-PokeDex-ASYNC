@@ -5,6 +5,7 @@ export class Pokemon{
   }
 
 
+  // NOTE I made all my templates in the index.html first so that I could just copy and paste them
   get PokemonListTemplate(){
     return `
     <div>

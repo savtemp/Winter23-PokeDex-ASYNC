@@ -1,4 +1,6 @@
 export class ActivePokemon{
+
+  // NOTE I needed to create a new template for the Active Pokemon because I cannot access the 'deeper' properties on each property with the old model. If you try to do it on the Pokemon.js model it will cause an error because javascript thinks that deeper property does not exist 
   constructor(data){
     this.name = data.name
     this.img = data.sprites.front_default
@@ -17,6 +19,8 @@ export class ActivePokemon{
     `
   }
 
+
+  // NOTE I used another getter to format the array that I was getting back from my abilities array 
   get FormatAbilities(){
     let template = ''
     this.abilities.forEach(a => template += `
